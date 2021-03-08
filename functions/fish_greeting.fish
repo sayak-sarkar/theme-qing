@@ -9,7 +9,7 @@
 #
 
 function fish_greeting -d "what's up, fish?"
-    if test $LINES -ge 20 -a $COLUMNS -ge 80 > /dev/null
-        bash (dirname (status -f))/../archey.sh
+    if test "$LINES -ge 20 && $COLUMNS -ge 80" > /dev/null
+        bash (dirname (status -f))/fedora_new.sh
     end
 end
